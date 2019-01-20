@@ -27,11 +27,19 @@ def preprocesingPhoto(image):
     # converting grayscale image to binary
    # thresh, binaryGrayImg = cv2.threshold(grayImg, 200, 255, cv2.THRESH_BINARY |
                                             #cv2.THRESH_OTSU)
-    ret,binaryGrayImg = cv2.threshold(grayImg,127,255,cv2.THRESH_BINARY_INV)                                        
+    ret,binaryGrayImg = cv2.threshold(grayImg,70,255,cv2.THRESH_BINARY_INV)                                        
+# =============================================================================
+#     binaryGrayImg = cv2.adaptiveThreshold(grayImg,255,cv2.ADAPTIVE_THRESH_MEAN_C,\
+#                 cv2.THRESH_BINARY,11,2)
+# =============================================================================
+# =============================================================================
+#     binaryGrayImg = cv2.adaptiveThreshold(grayImg ,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,\
+#                                 cv2.THRESH_BINARY,11,2)
+# =============================================================================
     resizedImg = cv2.resize(binaryGrayImg, (28,28))
     #preprocesedImg = 255 - resizedImg
     cv2.imshow('preprocesed photo', cv2.resize(resizedImg,(280,280)))
-    recognizingDigit(preprocesedImg)
+    recognizingDigit(resizedImg)
 
 def recognizingDigit(image):
     readyImg = image.reshape(1, 784)
