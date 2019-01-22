@@ -30,16 +30,29 @@ class CameraView(QThread):
                 self.readyFrame = convertToQtFormat.scaled(500, 375, Qt.KeepAspectRatio)
                 self.sendCameraView.emit(self.readyFrame)
 
-    @pyqtSlot()
-    def sendPhoto(self):
-        self.photo = self.frame
-        if self.ret:
+    @pyqtSlot(int, str)
+    def sendPhoto(self, num, path):
+        if num == 0:
+            self.photo = self.frame
+            # if self.ret:
+            #     rgbImage = cv2.cvtColor(self.photo, cv2.COLOR_BGR2RGB)
+            #     convertToQtFormat = QImage(rgbImage.data, rgbImage.shape[1], rgbImage.shape[0], QImage.Format_RGB888)
+            #     readyFrame2 = convertToQtFormat.scaled(500, 375, Qt.KeepAspectRatio)
+            #     self.sendCameraFrame.emit(readyFrame2)
+            #     #self.sendPhotoToProcess.emit(self.photo)
+            #     self.preprocessedPhoto(self.photo)
+        elif num == 1:
+                self.photo = cv2.imread(path, 1)
+        try :
             rgbImage = cv2.cvtColor(self.photo, cv2.COLOR_BGR2RGB)
             convertToQtFormat = QImage(rgbImage.data, rgbImage.shape[1], rgbImage.shape[0], QImage.Format_RGB888)
             readyFrame2 = convertToQtFormat.scaled(500, 375, Qt.KeepAspectRatio)
             self.sendCameraFrame.emit(readyFrame2)
-            #self.sendPhotoToProcess.emit(self.photo)
+            # # self.sendPhotoToProcess.emit(self.photo)
             self.preprocessedPhoto(self.photo)
+        except:
+            pass
+
 
     def preprocessedPhoto(self, photo):
         grayImg = cv2.cvtColor(photo, cv2.COLOR_BGR2GRAY)
@@ -52,7 +65,16 @@ class CameraView(QThread):
         self.sendImageToLabel.emit(readyFrame3)
         # print('a')
 
+    pyqtSlot(str)
+    def savePhoto(self, path):
+            try:
+                cv2.imwrite(path, self.photo)
+            except:
+                pass
 
+
+
+    # def imageToModel(self)
 
 
 

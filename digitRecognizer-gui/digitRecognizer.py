@@ -18,13 +18,15 @@ class DigitRecognizer(QWidget):
 
         #control
         self.imageButtons = ImagesButtons()
+        self.aiWidget = AiWidget()
 
         # user interference setting
         loadUi("ui/iv.ui", self)
         self.setWindowTitle("Digit Recognizer ver 0.1")
-        self.resize(1600, 450)
+        self.resize(1600, 550)
         self.verticalLayout.addWidget(self.imageButtons)
         self.verticalLayout.addWidget(self.imageLabels)
+        self.verticalLayout.addWidget(self.aiWidget)
 
         # connections
         # camera to imageLabels
@@ -34,7 +36,8 @@ class DigitRecognizer(QWidget):
 
         # imageButtons to camera
         self.imageButtons.takephoto.connect(self.camera.sendPhoto)
-
+        self.imageButtons.sendPhotoDir.connect(self.camera.sendPhoto)
+        self.imageButtons.savePhoto.connect(self.camera.savePhoto)
 
 
         self.camera.start()
