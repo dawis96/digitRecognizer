@@ -84,6 +84,8 @@ class ImagesButtons(QWidget):
 
 class AiWidget(QWidget):
 
+    # signals
+    predictDigit = pyqtSignal()
 
 
     def __init__(self, **kwds):
@@ -103,11 +105,18 @@ class AiWidget(QWidget):
         #
         # #connections
         #
-        # self.photoButton.clicked.connect(self.takePhotoClicked)
+        self.predictButton.clicked.connect(self.predictClicked)
         # self.openButton.clicked.connect(self.choseImageClicked)
         # self.saveButton.clicked.connect(self.saveImageClicked)
         # label -> aiLabel
 
+
+    def predictClicked(self):
+        self.predictDigit.emit()
+
+    @pyqtSlot(str)
+    def setText(self, digit):
+        self.aiLabel.setText("AI: It is "+digit+", isn't it?")
 
 
 

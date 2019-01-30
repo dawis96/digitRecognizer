@@ -1,5 +1,6 @@
 import cv2
 from keras.models import  load_model
+import numpy as np 
 
 cap = cv2.VideoCapture(0)
 
@@ -44,13 +45,16 @@ def preprocesingPhoto(image):
 def recognizingDigit(image):
     readyImg = image.reshape(1, 784)
     mnist_model = load_model('digitRecognizer.h5')
+    pre = mnist_model.predict_classes(readyImg)
     predicted_classes = mnist_model.predict(readyImg)
 
+
     print(predicted_classes)
+    print(pre)
     for i in range(len(predicted_classes[0])):
         if predicted_classes[0][i]:
             print('AI: I think it is '+str(i))
-    
+
 
 
 print('press "p" to take a photo or "q" to quit')
