@@ -51,6 +51,9 @@ class DigitRecognizer(QWidget):
         # aiWidget to camera
         self.aiWidget.predictDigit.connect(self.camera.imageToModel)
 
+        # aiWidget to cnnmodel
+        self.aiWidget.sendTrueDigit.connect(self.cnnmodel.improveModel)
+
         self.camera.start()
         #self.camera.startRecording = True
         #self.camera.start()
