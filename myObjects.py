@@ -1,9 +1,11 @@
-from PyQt5.QtCore import *
-from PyQt5.QtCore import pyqtSignal, pyqtSlot
-from PyQt5.QtGui import QImage, QPixmap
-import cv2
-from keras.models import  load_model
 import numpy as np
+import cv2
+
+from PyQt5.QtCore import QThread, QObject
+from PyQt5.QtCore import pyqtSignal, pyqtSlot, Qt
+from PyQt5.QtGui import QImage
+from keras.models import load_model
+
 
 class CameraView(QThread):
 
@@ -66,9 +68,8 @@ class CameraView(QThread):
 
     pyqtSlot()
     def imageToModel(self):
-        resized  = cv2.resize(self.binaryGrayImg , (28, 28))
+        resized  = cv2.resize(self.binaryGrayImg, (28, 28))
         self.sendImageToModel.emit(resized)
-
 
 
 class CnnModel(QObject):
@@ -83,13 +84,13 @@ class CnnModel(QObject):
         self.model = load_model('digitRecognizer.h5')
         self.image = None
         self.correctDigit = None
-    pyqtSlot(object)
+
+    @pyqtSlot(object)
     def takeImage(self, img):
         self.image = img
         self.image = self.image.reshape(1, 784)
 
         self.predictDigit()
-
 
     def predictDigit(self):
         predict = self.model.predict(self.image)
@@ -99,7 +100,7 @@ class CnnModel(QObject):
         #print(str(predict_class[0]))
         self.sendPredictedDigit.emit(str(predict_class[0]))
 
-    pyqtSlot(str)
+    @pyqtSlot(str)
     def improveModel(self, correctDigit):
         self.correctDigit = correctDigit
         y = np.zeros(10)

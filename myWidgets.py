@@ -1,12 +1,13 @@
-from PyQt5.QtWidgets import *
+from PyQt5.QtWidgets import QLabel, QWidget, QFileDialog, QInputDialog, QLineEdit
 from PyQt5.uic import loadUi
-import PyQt5.QtGui as QtGui
-from PyQt5.QtGui import *
-from PyQt5.QtCore import pyqtSignal, pyqtSlot, Qt
-import urllib.request
+from PyQt5.QtGui import QImage, QPixmap, QIcon
+from PyQt5.QtCore import pyqtSignal, pyqtSlot
+
+
 
 class ImagesLabels(QLabel):
     """Camera, photo and processed image display widget"""
+
     def __init__(self, **kwds):
         super(QLabel, self).__init__(**kwds)
         """ImagesLabel constructor
@@ -47,11 +48,11 @@ class ImagesButtons(QWidget):
         self.status = 'stop'
 
         #set icons
-        icon = QtGui.QIcon("imgs/photo")
+        icon = QIcon("imgs/photo")
         self.openButton.setIcon(icon)
-        icon = QtGui.QIcon("imgs/save")
+        icon = QIcon("imgs/save")
         self.saveButton.setIcon(icon)
-        icon = QtGui.QIcon("imgs/takePhoto")
+        icon = QIcon("imgs/takePhoto")
         self.photoButton.setIcon(icon)
 
         #connections
@@ -99,11 +100,11 @@ class AiWidget(QWidget):
         self.status = 'stop'
 
         #set icons
-        icon = QtGui.QIcon("imgs/ai")
+        icon = QIcon("imgs/ai")
         self.predictButton.setIcon(icon)
-        icon = QtGui.QIcon("imgs/true")
+        icon = QIcon("imgs/true")
         self.trueButton.setIcon(icon)
-        icon = QtGui.QIcon("imgs/false")
+        icon = QIcon("imgs/false")
         self.falseButton.setIcon(icon)
 
         #connections
@@ -114,7 +115,6 @@ class AiWidget(QWidget):
         # label -> aiLabel
 
         self.prediction = 0
-
 
     def predictClicked(self):
         """predict button clicked event handler"""
@@ -139,18 +139,3 @@ class AiWidget(QWidget):
             except:
                 pass
 
-
-
-
-
-
-
-
-
-
-if __name__ == '__main__':
-    import sys
-    app = QApplication(sys.argv)
-    widget = AiWidget()
-    widget.show()
-    sys.exit(app.exec_())

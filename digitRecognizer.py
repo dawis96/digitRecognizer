@@ -1,5 +1,9 @@
-from myObjects import *
-from myWidgets import *
+from PyQt5.QtWidgets import QApplication
+from PyQt5.QtWidgets import QWidget
+from PyQt5.uic import loadUi
+
+from myObjects import CameraView, CnnModel
+from myWidgets import ImagesButtons, ImagesLabels, AiWidget
 
 class DigitRecognizer(QWidget):
     """digitRecognizer class build on MVC Pattern"""
