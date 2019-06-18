@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+import os
+import sys
+import logging
+log = logging.getLogger(__name__)
+
 from PyQt5.QtWidgets import QApplication
 from PyQt5.QtWidgets import QWidget
 from PyQt5.uic import loadUi
@@ -37,18 +43,18 @@ class DigitRecognizer(QWidget):
 
         # connections
         # camera to imageLabels
-        self.camera.sendCameraView.connect(self.imageLabels.setCameraLabel)
-        self.camera.sendCameraFrame.connect(self.imageLabels.setPhotoLabel)
-        self.camera.sendImageToLabel.connect(self.imageLabels.setImageLabel)
+        self.camera.sendCameraView.connect(self.imageLabels.show_camera_view)
+        self.camera.sendCameraFrame.connect(self.imageLabels.show_photo)
+        self.camera.sendImageToLabel.connect(self.imageLabels.show_processed_photo)
 
         # camera to cnnmodel
         self.camera.sendImageToModel.connect(self.cnnmodel.takeImage)
 
         #cnnmodel to aiWidget
-        self.cnnmodel.sendPredictedDigit.connect(self.aiWidget.setText)
+        self.cnnmodel.sendPredictedDigit.connect(self.aiWidget.set_prediction_result)
 
         # imageButtons to camera
-        self.imageButtons.takephoto.connect(self.camera.sendPhoto)
+        self.imageButtons.takePhoto.connect(self.camera.sendPhoto)
         self.imageButtons.sendPhotoDir.connect(self.camera.sendPhoto)
         self.imageButtons.savePhoto.connect(self.camera.savePhoto)
 
@@ -56,18 +62,20 @@ class DigitRecognizer(QWidget):
         self.aiWidget.predictDigit.connect(self.camera.imageToModel)
 
         # aiWidget to cnnmodel
-        self.aiWidget.sendTrueDigit.connect(self.cnnmodel.improveModel)
+        self.aiWidget.sendCorrectedDigit.connect(self.cnnmodel.improveModel)
 
         self.camera.start()
         #self.camera.startRecording = True
         #self.camera.start()
 
-
-
+def myExceptionhook(exc_type, exc_value, exc_traceback):
+    log.critical("Unexpected exception occurred!",
+                 exc_info=(exc_type, exc_value, exc_traceback))
 
 if __name__ == '__main__':
-    import sys
 
+    # logging.basicConfig(level=logging.DEBUG)
+    sys.excepthook = myExceptionhook
     app = QApplication(sys.argv)
     #app.setWindowIcon(QIcon('imgs\icon.png'))
     digitRecognizer = DigitRecognizer()

@@ -34,7 +34,7 @@ class CameraView(QThread):
                 self.sendCameraView.emit(self.readyFrame)
 
     @pyqtSlot(int, str)
-    def sendPhoto(self, num, path):
+    def sendPhoto(self, num, path=''):
         if num == 0:
             self.photo = self.frame
         elif num == 1:
