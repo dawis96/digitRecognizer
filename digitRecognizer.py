@@ -8,7 +8,7 @@ from PyQt5.QtWidgets import QApplication
 from PyQt5.QtWidgets import QWidget
 from PyQt5.uic import loadUi
 
-from myObjects import CameraView, CnnModel
+from myObjects import MainModel, MachineLearningAlgorithm, CameraThread
 from myWidgets import ImagesButtons, ImagesLabels, AiWidget
 
 class DigitRecognizer(QWidget):
@@ -20,8 +20,9 @@ class DigitRecognizer(QWidget):
         pattern  """
 
         #model
-        self.camera = CameraView()
-        self.cnnmodel = CnnModel()
+        self.model = MainModel()
+        self.camera_thread = CameraThread()
+        self.machine_learning_algorithm = MachineLearningAlgorithm()
 
 
         #view
@@ -42,31 +43,36 @@ class DigitRecognizer(QWidget):
         self.verticalLayout.addWidget(self.aiWidget)
 
         # connections
-        # camera to imageLabels
-        self.camera.sendCameraView.connect(self.imageLabels.show_camera_view)
-        self.camera.sendCameraFrame.connect(self.imageLabels.show_photo)
-        self.camera.sendImageToLabel.connect(self.imageLabels.show_processed_photo)
+        # camera_thread to imageLabels
+        self.camera_thread.send_camera_view_to_gui.connect(self.imageLabels.show_camera_view)
 
-        # camera to cnnmodel
-        self.camera.sendImageToModel.connect(self.cnnmodel.takeImage)
+        # camera_thread to model
+        self.camera_thread.send_photo_to_model.connect(self.model.get_image)
 
-        #cnnmodel to aiWidget
-        self.cnnmodel.sendPredictedDigit.connect(self.aiWidget.set_prediction_result)
+        # model to imageLabels
+        self.model.send_original_photo_to_gui.connect(self.imageLabels.show_photo)
+        self.model.send_processed_photo_to_gui.connect(self.imageLabels.show_processed_photo)
 
-        # imageButtons to camera
-        self.imageButtons.takePhoto.connect(self.camera.sendPhoto)
-        self.imageButtons.sendPhotoDir.connect(self.camera.sendPhoto)
-        self.imageButtons.savePhoto.connect(self.camera.savePhoto)
+        # model to machine_learning_algorithm
+        self.model.send_proccesd_image_to_ML.connect(self.machine_learning_algorithm.takeImage)
 
-        # aiWidget to camera
-        self.aiWidget.predictDigit.connect(self.camera.imageToModel)
+        # machine_learning_algorithm to aiWidget
+        self.machine_learning_algorithm.sendPredictedDigit.connect(self.aiWidget.set_prediction_result)
+
+        # imageButtons to camera_thread
+        self.imageButtons.takePhoto.connect(self.camera_thread.take_photo)
+
+        # imageButtons to model
+        self.imageButtons.sendPhotoDir.connect(self.model.load_image)
+        self.imageButtons.savePhoto.connect(self.model.savePhoto)
+
+        # aiWidget to model
+        self.aiWidget.predictDigit.connect(self.model.send_processd_for_prediction)
 
         # aiWidget to cnnmodel
-        self.aiWidget.sendCorrectedDigit.connect(self.cnnmodel.improveModel)
+        self.aiWidget.sendCorrectedDigit.connect(self.machine_learning_algorithm.improveModel)
 
-        self.camera.start()
-        #self.camera.startRecording = True
-        #self.camera.start()
+        self.camera_thread.start()
 
 def myExceptionhook(exc_type, exc_value, exc_traceback):
     log.critical("Unexpected exception occurred!",

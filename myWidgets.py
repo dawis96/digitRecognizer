@@ -56,8 +56,8 @@ class ImagesButtons(QWidget):
     """
 
     # pyqt signals
-    takePhoto = pyqtSignal(int, str)
-    sendPhotoDir = pyqtSignal(int, str)
+    takePhoto = pyqtSignal()
+    sendPhotoDir = pyqtSignal(str)
     savePhoto = pyqtSignal(str)
 
     def __init__(self, **kwds):
@@ -88,7 +88,7 @@ class ImagesButtons(QWidget):
     def take_photo_clicked(self):
         """Photo button clicked event handler
         """
-        self.takePhoto.emit(0, '')
+        self.takePhoto.emit()
 
     def chose_image_clicked(self):
         """Open button clicked event handler,
@@ -96,7 +96,7 @@ class ImagesButtons(QWidget):
         """
         window_title = "Select Photo"
         path, _ = QFileDialog.getOpenFileName(self, window_title, '', "Image files (*.jpg *.jpeg *.png)")
-        self.sendPhotoDir.emit(1, path)
+        self.sendPhotoDir.emit(path)
 
     def save_image_clicked(self):
         """Save button clicked event handler,

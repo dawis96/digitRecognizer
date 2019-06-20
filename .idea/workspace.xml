@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="233efec8-2a8d-423b-9948-9ef5403ac377" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digitRecognizer.h5" beforeDir="false" afterPath="$PROJECT_DIR$/digitRecognizer.h5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/digitRecognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/digitRecognizer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myObjects.py" beforeDir="false" afterPath="$PROJECT_DIR$/myObjects.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myWidgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/myWidgets.py" afterDir="false" />
@@ -17,10 +19,30 @@
       <content type="file-editors">
         <state>
           <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/../BMW_PickleCreator/src/aptiv/BMW_PickleCreator/model.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="153">
+                    <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="31" />
+                    <folding>
+                      <element signature="e#24#34#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
             <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/../BMW_PickleCreator/src/aptiv/BMW_PickleCreator/view.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="297">
+                  <state relative-caret-position="663">
                     <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
                     <folding>
                       <element signature="e#24#33#0" expanded="true" />
@@ -29,20 +51,32 @@
                 </provider>
               </entry>
             </file>
-            <file pinned="false" current-in-tab="true">
+            <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/../aptiv.applicationsTreeCreator/src/aptiv/applicationsTreeCreator/view.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="442">
-                    <caret line="87" column="8" lean-forward="true" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="69" />
+                  <state relative-caret-position="272">
+                    <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
                   </state>
                 </provider>
               </entry>
             </file>
             <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/../BMW_PickleCreator/src/aptiv/BMW_PickleCreator/model.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="17">
+                    <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+                    <folding>
+                      <element signature="e#24#34#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/../BMW_PickleCreator/src/aptiv/BMW_PickleCreator/mdf_gui.py">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="515">
-                    <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+                  <state relative-caret-position="248">
+                    <caret line="50" selection-start-line="50" selection-end-line="50" />
                     <folding>
                       <element signature="e#24#33#0" expanded="true" />
                     </folding>
@@ -60,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/digitRecognizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="64" column="35" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
+            <state relative-caret-position="306">
+              <caret line="18" column="74" lean-forward="true" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -69,23 +103,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myObjects.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-799">
-              <caret line="43" column="77" selection-start-line="43" selection-start-column="77" selection-end-line="43" selection-end-column="77" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-149">
+              <caret line="99" column="39" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myWidgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="714">
+              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="49" selection-end-column="11" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -107,6 +138,9 @@
       <find>sendCameraFrame</find>
       <find>QtGui</find>
       <find>os.</find>
+      <find>model</find>
+      <find>sendPhotoDir</find>
+      <find>send_proccesd_image_to_ML</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -117,17 +151,17 @@
       <list>
         <option value="$PROJECT_DIR$/../digitRecognicer-console.py" />
         <option value="$PROJECT_DIR$/../BMW_PickleCreator/src/aptiv/BMW_PickleCreator/view.py" />
-        <option value="$PROJECT_DIR$/myObjects.py" />
-        <option value="$PROJECT_DIR$/digitRecognizer.py" />
         <option value="$PROJECT_DIR$/myWidgets.py" />
+        <option value="$PROJECT_DIR$/digitRecognizer.py" />
+        <option value="$PROJECT_DIR$/myObjects.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-109" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="x" value="2091" />
+    <option name="y" value="86" />
+    <option name="width" value="1152" />
+    <option name="height" value="618" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -212,15 +246,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-109" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="1912" y="101" width="916" height="1576" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.20405577" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33378196" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17186417" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.31224763" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -267,29 +300,9 @@
     <entry file="file://$PROJECT_DIR$/../../ProjectFT/myWidgets.py" />
     <entry file="file://$PROJECT_DIR$/../digitRecognicer-console.py" />
     <entry file="file://$PROJECT_DIR$/../neuralNetwork.py" />
-    <entry file="file://$PROJECT_DIR$/myObjects.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-799">
-          <caret line="43" column="77" selection-start-line="43" selection-start-column="77" selection-end-line="43" selection-end-column="77" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../BMW_PickleCreator/src/aptiv/BMW_PickleCreator/mdf_gui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="e#24#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../BMW_PickleCreator/src/aptiv/BMW_PickleCreator/view.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
+        <state relative-caret-position="663">
           <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
@@ -299,28 +312,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../aptiv.applicationsTreeCreator/src/aptiv/applicationsTreeCreator/view.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="87" column="8" lean-forward="true" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="69" />
+        <state relative-caret-position="272">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/digitRecognizer.py">
+    <entry file="file://$PROJECT_DIR$/../BMW_PickleCreator/src/aptiv/BMW_PickleCreator/mdf_gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="64" column="35" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
+        <state relative-caret-position="248">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../BMW_PickleCreator/src/aptiv/BMW_PickleCreator/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="31" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myWidgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="714">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="49" selection-end-column="11" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/digitRecognizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="74" lean-forward="true" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myObjects.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-149">
+          <caret line="99" column="39" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
         </state>
       </provider>
     </entry>
