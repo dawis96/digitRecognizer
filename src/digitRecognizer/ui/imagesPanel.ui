@@ -119,7 +119,7 @@
         <enum>Qt::LeftToRight</enum>
        </property>
        <property name="text">
-        <string>Real Photo</string>
+        <string>Original Photo</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>

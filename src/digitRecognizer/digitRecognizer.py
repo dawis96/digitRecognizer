@@ -8,8 +8,11 @@ from PyQt5.QtWidgets import QApplication
 from PyQt5.QtWidgets import QWidget
 from PyQt5.uic import loadUi
 
-from myObjects import MainModel, MachineLearningAlgorithm, CameraThread
-from myWidgets import ImagesButtons, ImagesLabels, AiWidget
+from .myObjects import MainModel, MachineLearningAlgorithm, CameraThread
+from .myWidgets import ImagesButtons, ImagesLabels, AiWidget
+
+cur_dir = os.path.dirname(os.path.abspath(__file__))
+
 
 class DigitRecognizer(QWidget):
     """digitRecognizer class build on MVC Pattern"""
@@ -33,7 +36,7 @@ class DigitRecognizer(QWidget):
         self.aiWidget = AiWidget()
 
         # user interference setting
-        loadUi("ui/iv.ui", self)
+        loadUi(os.path.join(cur_dir, "ui/iv.ui"), self)
         self.setWindowTitle("Digit Recognizer ver 0.1")
         #self.resize(1600, 550)
         self.setMinimumSize(1600, 550)
@@ -78,13 +81,16 @@ def myExceptionhook(exc_type, exc_value, exc_traceback):
     log.critical("Unexpected exception occurred!",
                  exc_info=(exc_type, exc_value, exc_traceback))
 
-if __name__ == '__main__':
-
+def main():
     # logging.basicConfig(level=logging.DEBUG)
     sys.excepthook = myExceptionhook
     app = QApplication(sys.argv)
-    #app.setWindowIcon(QIcon('imgs\icon.png'))
+    # app.setWindowIcon(QIcon('imgs\icon.png'))
     digitRecognizer = DigitRecognizer()
     digitRecognizer.show()
 
     sys.exit(app.exec_())
+
+if __name__ == '__main__':
+
+    main()

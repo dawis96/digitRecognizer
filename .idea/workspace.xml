@@ -2,11 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="233efec8-2a8d-423b-9948-9ef5403ac377" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/digitRecognizer-gui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/digitRecognizer-gui.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/digitRecognizer.h5" beforeDir="false" afterPath="$PROJECT_DIR$/digitRecognizer.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/digitRecognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/digitRecognizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myObjects.py" beforeDir="false" afterPath="$PROJECT_DIR$/myObjects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myWidgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/myWidgets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/digitRecognizer.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/digitRecognizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/ai.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/false.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/photo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/save.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/takePhoto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/true.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myObjects.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myWidgets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neuralNetwork.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/aiPanel.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/imagenControlPanel.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/imagesControlPanel.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/imagesPanel.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/iv.ui" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,109 +30,31 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/../BMW_PickleCreator/src/aptiv/BMW_PickleCreator/model.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="153">
-                    <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="31" />
-                    <folding>
-                      <element signature="e#24#34#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/../BMW_PickleCreator/src/aptiv/BMW_PickleCreator/view.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="663">
-                    <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-                    <folding>
-                      <element signature="e#24#33#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/../aptiv.applicationsTreeCreator/src/aptiv/applicationsTreeCreator/view.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="272">
-                    <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/../BMW_PickleCreator/src/aptiv/BMW_PickleCreator/model.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="17">
-                    <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-                    <folding>
-                      <element signature="e#24#34#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/../BMW_PickleCreator/src/aptiv/BMW_PickleCreator/mdf_gui.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="248">
-                    <caret line="50" selection-start-line="50" selection-end-line="50" />
-                    <folding>
-                      <element signature="e#24#33#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/digitRecognizer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="74" lean-forward="true" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
-              <folding>
-                <element signature="e#24#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/myObjects.py">
+        <entry file="file://$PROJECT_DIR$/src/digitRecognizer/digitRecognizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-149">
-              <caret line="99" column="39" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
+            <state relative-caret-position="459">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myWidgets.py">
+        <entry file="file://$PROJECT_DIR$/src/digitRecognizer/myObjects.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="49" selection-end-column="11" />
+            <state relative-caret-position="274">
+              <caret line="156" column="76" selection-start-line="156" selection-start-column="76" selection-end-line="156" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/digitRecognizer/myWidgets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="52" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
               </folding>
@@ -154,20 +92,23 @@
         <option value="$PROJECT_DIR$/myWidgets.py" />
         <option value="$PROJECT_DIR$/digitRecognizer.py" />
         <option value="$PROJECT_DIR$/myObjects.py" />
+        <option value="$PROJECT_DIR$/src/digitRecognizer/myObjects.py" />
+        <option value="$PROJECT_DIR$/src/digitRecognizer/digitRecognizer.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2091" />
-    <option name="y" value="86" />
-    <option name="width" value="1152" />
-    <option name="height" value="618" />
+    <option name="x" value="1626" />
+    <option name="y" value="-878" />
+    <option name="width" value="1551" />
+    <option name="height" value="839" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -178,18 +119,22 @@
             <path>
               <item name="digitRecognizer" type="b2602c69:ProjectViewProjectNode" />
               <item name="digitRecognizer" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="digitRecognizer" type="b2602c69:ProjectViewProjectNode" />
               <item name="digitRecognizer" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="digitRecognizer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digitRecognizer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -217,16 +162,16 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\python3.6\python.exe" />
+      <option name="SDK_HOME" value="C:\anaconda37\envs\venv\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/digitRecognizer.py" />
+      <option name="SCRIPT_NAME" value="digitRecognizer" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
+      <option name="MODULE_MODE" value="true" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
@@ -246,14 +191,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="101" width="916" height="1576" extended-state="6" />
+    <frame x="1912" y="-856" width="916" height="1576" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.20405577" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20387244" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.17186417" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36174637" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.31224763" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -290,6 +235,17 @@
       <window_info anchor="right" id="R Packages" order="4" />
     </layout-to-restore>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/digitRecognizer/myWidgets.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../test.py" />
     <entry file="file://D:/OpenCV/Sentdex/Lesson1.py" />
@@ -317,30 +273,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../BMW_PickleCreator/src/aptiv/BMW_PickleCreator/mdf_gui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="e#24#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../BMW_PickleCreator/src/aptiv/BMW_PickleCreator/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="31" />
+        <state relative-caret-position="17">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myWidgets.py">
+    <entry file="file://$PROJECT_DIR$/../BMW_PickleCreator/src/aptiv/BMW_PickleCreator/mdf_gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="49" selection-end-column="11" />
+        <state relative-caret-position="234">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>
@@ -349,8 +295,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/digitRecognizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="74" lean-forward="true" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
+        <state relative-caret-position="272">
+          <caret line="18" column="74" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myWidgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
           </folding>
@@ -359,8 +315,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myObjects.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-149">
-          <caret line="99" column="39" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
+        <state relative-caret-position="3111">
+          <caret line="183" column="34" selection-start-line="183" selection-start-column="34" selection-end-line="183" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/anaconda37/envs/venv/Lib/site-packages/h5py/_hl/files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="393" selection-start-line="393" selection-end-line="393" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/anaconda37/envs/venv/Lib/site-packages/keras/utils/io_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="185" selection-start-line="185" selection-end-line="185" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/anaconda37/envs/venv/Lib/site-packages/keras/engine/saving.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="416" selection-start-line="416" selection-end-line="416" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/digitRecognizer/myObjects.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="156" column="76" selection-start-line="156" selection-start-column="76" selection-end-line="156" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/digitRecognizer/myWidgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="52" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/digitRecognizer/digitRecognizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>

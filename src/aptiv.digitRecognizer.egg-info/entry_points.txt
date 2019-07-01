@@ -1,0 +1,3 @@
+[console_scripts]
+digitRecognizer = digitRecognizer.__main__:main
+

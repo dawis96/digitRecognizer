@@ -2,6 +2,7 @@
 
 import logging
 log = logging.getLogger(__name__)
+import os
 
 import numpy as np
 import cv2
@@ -10,6 +11,8 @@ from PyQt5.QtCore import QThread, QObject
 from PyQt5.QtCore import pyqtSignal, pyqtSlot, Qt
 from PyQt5.QtGui import QImage
 from keras.models import load_model
+
+cur_dir = os.path.dirname(os.path.abspath(__file__))
 
 
 class MainModel(QObject):
@@ -151,7 +154,7 @@ class MachineLearningAlgorithm(QObject):
         """MImgViewerModel constructor
         """
         super(QObject, self).__init__(**kwds)
-        self.model = load_model('digitRecognizer.h5')
+        self.model = load_model(os.path.join(cur_dir, 'digitRecognizer.h5'))
         self.image = None
         self.correctDigit = None
 

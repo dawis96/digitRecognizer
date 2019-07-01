@@ -1,0 +1,15 @@
+#ignore thumbnails created by windows
+Thumbs.db
+#Ignore files
+*.pyc
+
+/.tox/
+*/bin/
+*/.idea/*
+.idea/*
+*/.project
+*/.pydevproject
+.project
+.pydevproject
+
+**/*.egg-info/
