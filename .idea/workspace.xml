@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="233efec8-2a8d-423b-9948-9ef5403ac377" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/digitRecognizer-gui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/digitRecognizer-gui.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/digitRecognizer.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/digitRecognizer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/ai.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/false.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/photo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/save.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/takePhoto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/true.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myObjects.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myWidgets.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/neuralNetwork.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/aiPanel.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/imagenControlPanel.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/imagesControlPanel.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/imagesPanel.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/iv.ui" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,20 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/digitRecognizer/digitRecognizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="204">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/digitRecognizer/myObjects.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="156" column="76" selection-start-line="156" selection-start-column="76" selection-end-line="156" selection-end-column="76" />
+            <state relative-caret-position="438">
+              <caret line="179" column="26" selection-start-line="179" selection-start-column="26" selection-end-line="179" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -53,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/digitRecognizer/myWidgets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="153">
               <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="52" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
@@ -98,10 +80,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1626" />
-    <option name="y" value="-878" />
-    <option name="width" value="1551" />
-    <option name="height" value="839" />
+    <option name="x" value="-1797" />
+    <option name="y" value="-235" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -127,10 +109,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="digitRecognizer" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="digitRecognizer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -139,6 +117,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -167,6 +146,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="digitRecognizer" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -187,18 +167,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548008187810</updated>
+      <workItem from="1568226277295" duration="206000" />
+      <workItem from="1568299157921" duration="10000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="216000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-856" width="916" height="1576" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20387244" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20911528" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36174637" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3606789" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.31224763" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -207,11 +192,15 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="R Packages" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="SciView" order="6" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20405577" />
@@ -235,6 +224,9 @@
       <window_info anchor="right" id="R Packages" order="4" />
     </layout-to-restore>
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -245,6 +237,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/digitRecognizer$digitRecognizer.coverage" NAME="digitRecognizer Coverage Results" MODIFIED="1569947762923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../test.py" />
@@ -293,33 +288,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/digitRecognizer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="74" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
-          <folding>
-            <element signature="e#24#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myWidgets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
-          <folding>
-            <element signature="e#24#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myObjects.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3111">
-          <caret line="183" column="34" selection-start-line="183" selection-start-column="34" selection-end-line="183" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/digitRecognizer.py" />
+    <entry file="file://$PROJECT_DIR$/myWidgets.py" />
+    <entry file="file://$PROJECT_DIR$/myObjects.py" />
     <entry file="file://C:/anaconda37/envs/venv/Lib/site-packages/h5py/_hl/files.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -341,16 +312,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/digitRecognizer/myObjects.py">
+    <entry file="file://$PROJECT_DIR$/src/digitRecognizer/digitRecognizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="156" column="76" selection-start-line="156" selection-start-column="76" selection-end-line="156" selection-end-column="76" />
+        <state relative-caret-position="204">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/digitRecognizer/myWidgets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="153">
           <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="52" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
@@ -358,10 +329,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/digitRecognizer/digitRecognizer.py">
+    <entry file="file://$PROJECT_DIR$/src/digitRecognizer/myObjects.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="438">
+          <caret line="179" column="26" selection-start-line="179" selection-start-column="26" selection-end-line="179" selection-end-column="26" />
         </state>
       </provider>
     </entry>
